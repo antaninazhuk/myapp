@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card as StoryCard, Button } from 'react-bootstrap';
 
+
 export function Card(props) {
   const { title, abstract, multimedia } = props;
   const imageSrc = Array.isArray(multimedia) && multimedia[1].url;
@@ -13,7 +14,7 @@ export function Card(props) {
         <StoryCard.Text style={{ flex: 1}}>
           {abstract}
         </StoryCard.Text>
-        <Button variant="primary" style={{ width: '60%', margin: 'auto'}}>Read more</Button>
+        <Button variant="primary" style={{ width: '60%', margin: 'auto', background: '#0D1B2A', border: 'none'}}>Read more</Button>
       </StoryCard.Body>
     </StoryCard>
   )
